@@ -66,3 +66,44 @@ h3 {
     color: white;
     font-size: 140%;
 }
+
+.table {
+    background-color: var(--sekcja1--);
+    height: 17.5%;
+    width: 90%;
+    min-height: 60px;
+    margin-left: 5%;
+    margin-top: 4%;
+    border: dotted 3px var(--sekcja2--);
+    border-radius: 25px;
+}
+
+.line {
+    width: 100%;
+    padding-top: auto;
+    margin-top: 20px;
+    height: 20px;
+    background-color: var(--sekcja2--);
+}
+
+.sticker {
+    margin-right: 2%;
+    height: 60%;
+}
+
+.table_text {
+    font-size: 110%;
+    padding-top: auto;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+::-webkit-scrollbar {
+    width: 12.5px;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
