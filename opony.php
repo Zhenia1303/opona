@@ -16,6 +16,7 @@
   $database = 'opony';
 
   $connection = mysqli_connect($server, $user, $password, $database);
+  header('refresh: 10; url=opony.php');
   ?>
   <main id="blok_glowny">
     <?php
@@ -66,16 +67,14 @@
       <h2>Najnowsze zamowienie</h2>
       <h2>$row[0] $row[1] sztuki modelu $row[2]</h2>
       <h2>Wartosc zamowienia $value</h2>
-    </section>"
-      ?>
+    </section>";
+
+    $query = mysqli_close($connection);
+    ?>
   </main>
   <footer id="blok_stopki">
     <p>Stronę wykonał: 000000000</p>
   </footer>
-  <?php
-  header('refresh: 10; url=opony.php');
-  $query = mysqli_close($connection);
-  ?>
 </body>
 
 </html>
